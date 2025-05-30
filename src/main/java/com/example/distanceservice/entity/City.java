@@ -18,7 +18,6 @@ public class City {
 
     @ManyToOne
     @JoinColumn(name = "country_id")
-    @JsonBackReference
     private Country country;
 
     public Long getId() { return id; }
